@@ -1,0 +1,134 @@
+body {
+    color: #FFF;
+    /*background-color: #484747;*/
+    background-color: #313131;
+    font-family: 'Avenir next';
+    /*width: auto;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+height: 580px;
+width: 100%;
+background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(images/banner.jpg);
+background-size: cover;
+background-position: center;
+/*background-color: black;*/
+width:100%;
+/*opacity: 0.5;*/
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 100px;
+    text-align: center;
+    position: relative;
+    top: 120px;
+}
+
+h2 {
+    border-bottom: 1px solid #FFF;
+}
+
+h4 {
+    padding-top: 5%;
+}
+
+#bajada {
+    font-size: 26px;
+    padding: 2% 10%;
+}
+
+.arconte, .agora, .areopago, .academia {
+    padding:5% 10% 0;
+}
+
+img[src*='perfil'] {
+    width: 124px;
+    height: 124px;
+    flex-shrink: 1;
+    border-radius: 124px;
+    position: relative;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.agora1 {
+    display: flex;
+    justify-content: space-between;  
+    padding-top: 5%;
+    align-items: center;
+}
+
+img[src*='hercules'] {
+width: 425px;
+height: 430px;
+}
+
+.agora2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    flex-shrink: 2;
+    align-items: center;
+}
+
+.trabajos {
+    position: relative;
+    width: 45%;
+}
+
+.voluntariado {
+    position: relative;
+    width: 45%;
+}
+
+img[src*='escultura'] {
+    width: 363px;
+    height: 480px;
+    position:relative;
+    left: 50px;
+}
+
+.habilidades {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    width: 80%;
+    align-items: center;
+}
+
+.educacion {
+    padding-top: 5%;
+}
+
+.academia ul {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+a:link {
+    color:cornflowerblue
+}
+
+a:visited {
+    color:blueviolet
+}
+
+
+img[src*='footer'] {
+    background-size: cover;
+    background-position: center;
+    width:100%;
+}
