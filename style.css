@@ -12,7 +12,6 @@ body {
 
 header {
     height: 580px;
-    width: 100%;
     background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(images/banner.jpg);
     background-size: cover;
     background-position: center;
@@ -42,7 +41,23 @@ h4 {
 
 .arconte, .agora, .areopago, .academia {
     padding:5% 10% 0;
+    font-size: 26px;
 }
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+}
+
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
 
 img[src*='perfil'] {
     width: 124px;
@@ -52,79 +67,141 @@ img[src*='perfil'] {
     position: relative;
 }
 
-.items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.item {
+    padding: 5% 10% 5%;
 }
 
-
-.agora1 {
-    display: flex;
-    justify-content: space-between;  
-    padding-top: 5%;
-    align-items: center;
-}
-
-img[src*='hercules'] {
-width: 425px;
-height: 430px;
-}
-
-.agora2 {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 5%;
-    flex-shrink: 2;
-    align-items: center;
-}
-
-.trabajos {
-    position: relative;
-    width: 45%;
-}
-
-.voluntariado {
-    position: relative;
-    width: 45%;
-}
-
+img[src*='hercules'],
 img[src*='escultura'] {
-    width: 363px;
-    height: 480px;
-    position:relative;
-    left: 50px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
 }
 
-.habilidades {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 5%;
-    width: 80%;
-    align-items: center;
+.trabajos,
+.voluntariado {
+    padding-bottom: 5%;
 }
 
-.educacion {
-    padding-top: 5%;
-}
 
-.academia ul {
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 10%;
-}
 
 a:link {
     color:cornflowerblue
 }
-
+    
 a:visited {
     color:blueviolet
 }
 
 
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .arconte, .agora, .areopago, .academia {
+        font-size:inherit;
+    }
+
+    .item {
+        padding: 0;
+    }
+
+    .contacto {
+        padding: 5% 7% 0%;
+        align-items: center;
+        display: flex;
+        float: none;
+    }
+    
+    
+    .agora1 {
+        display: flex;
+        justify-content: space-between;  
+        padding-top: 5%;
+        align-items: center;
+        flex-shrink: 2;
+        float:none;
+        padding-left: 10%;
+    }
+
+    .trabajos {
+        position: relative;
+        padding-right: 5%;
+    }
+    
+    img[src*='hercules'] {
+    width: 425px;
+    height: auto;
+    float:none;
+    padding-left: 4%;
+    }
+    
+    .agora2 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5%;
+        flex-shrink: 2;
+        align-items: center;
+        float:none;
+        padding-left: 10%;
+    }
+    
+    .trabajos {
+      position: relative;
+        
+    }
+
+    .voluntariado {
+        position: relative;
+        float: none;
+        padding-left: 4%;
+    }
+    
+    img[src*='escultura'] {
+        width: 463px;
+        height: auto;
+        position:relative;
+        float: none;
+        padding-right: 5%;
+    }
+    
+    .habilidades {
+        padding: 5% 7% 0% 10%;
+        align-items: center;
+        display: flex;
+        float: none;
+    }
+    
+    .educacion {
+        padding-top: 5%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .academia ul {
+        padding-top: 5%;
+        padding-bottom: 10%;
+        padding-left: 7%;
+        padding-right: 0;
+
+    }
+
+  }
+
 img[src*='footer'] {
     background-size: cover;
     background-position: center;
+    padding-top: 10%;
     width:100%;
 }
