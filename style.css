@@ -236,6 +236,32 @@ input {
         float: none;
     }
 
+    input {
+        width: 50%;
+        height: 30px;
+        text-align: center;
+    }
+    
+    #ask {
+        height: 40px;
+        width: 120px;
+        font-size: 20px;
+        position: relative;
+        background-color: #eee;
+        color: #333;
+        border:unset;
+        border-radius: 20px;
+        margin: 20px 0;
+        cursor: pointer;
+    }
+    
+    .oracle {
+        margin: 0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     
 
   }
