@@ -39,7 +39,7 @@ h4 {
     padding: 2% 10%;
 }
 
-.arconte, .agora, .areopago, .academia {
+.arconte, .agora, .areopago, .academia, .oraculo {
     padding:5% 10% 0;
     font-size: 20px;
 }
@@ -79,7 +79,8 @@ img[src*='escultura'] {
 }
 
 .trabajos,
-.voluntariado {
+.voluntariado,
+.pitonisa {
     padding-bottom: 5%;
 }
 
@@ -91,6 +92,33 @@ a:link {
     
 a:visited {
     color:blueviolet
+}
+
+input {
+    width: 50%;
+    height: 30px;
+    text-align: center;
+}
+
+#ask {
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    position: relative;
+    background-color: #eee;
+    color: #333;
+    border:unset;
+    border-radius: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.oracle {
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -113,7 +141,7 @@ a:visited {
         font-size: 100px;
     }
 
-    .arconte, .agora, .areopago, .academia {
+    .arconte, .agora, .areopago, .academia, .oraculo {
         font-size:inherit;
     }
 
@@ -200,6 +228,15 @@ a:visited {
         padding-right: 0;
 
     }
+
+    .pitonisa {
+        padding: 5% 7% 5%;
+        align-items: center;
+        display: flex;
+        float: none;
+    }
+
+    
 
   }
 
