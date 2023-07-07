@@ -94,6 +94,14 @@ a:visited {
     color:blueviolet
 }
 
+.oracle {
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 input {
     width: 50%;
     height: 30px;
@@ -104,22 +112,15 @@ input {
     height: 40px;
     width: 120px;
     font-size: 20px;
-    position: relative;
     background-color: #eee;
     color: #333;
     border:unset;
     border-radius: 20px;
     margin: 20px 0;
     cursor: pointer;
+
 }
 
-.oracle {
-    margin: 0;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 
 @media only screen and (min-width: 768px) {
@@ -264,7 +265,7 @@ input {
     }
     
 
-  }
+}
 
 img[src*='footer'] {
     background-size: cover;
