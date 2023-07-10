@@ -1,58 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
-        <link href="style.css" rel="stylesheet">
-        <title>joakopolis</title>
+        <!--link href="style.css" rel="stylesheet"-->
+        <title>Joakopolis</title>
         <meta name="author" content="Joaquin Moreno">
         <meta name="description" content="Joakopolis es una ciudad libre, dedicada al desarrollo de contenidos basados en la experiencia de usuario">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="oracle.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     </head>
 
-    <body>
-        <header>
-                <h1>Joakopolis</h1>
-        </header>
+    <body class="bg-black text-light">
+        <div class="img-fluid" style="height: 580px; background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(images/banner.jpg);
+        background-size: cover;
+        background-position: center;">
+            <div class="container p-5">
+                <h1 class="d-flex justify-content-center display-1">Joakopolis</h1>
+            </div>
+                
+        </div>
 
-        <section id="bajada">
-            <p>Les doy la bienvenida a Joakopolis, una ciudad libre donde se valora la democracia, el pensamiento crítico y la innovación. Fundada en Buenos Aires, Argentina, se dedica al desarrollo de contenidos basados en la experiencia de usuario.</p>
+        <section class="col container mt-5">
+            <p class="fs-3">Les doy la bienvenida a Joakopolis, una ciudad libre donde se valora la democracia, el pensamiento crítico y la innovación. Fundada en Buenos Aires, Argentina, se dedica al desarrollo de contenidos basados en la experiencia de usuario.</p>
         </section>
 
-        <section class="arconte">
-            <h2>Arconte</h2>
+        <section class="container pb-5">
+            <h2 class="border-bottom border-light">Arconte</h2>
 
-            <div class="contacto row">
+            <div class="row mt-5 align-items-center">
 
-                <div class="col-2 item">
-                    <img src="images/perfil.jpg" alt="foto de Joaquin">
+                <div class="col-sm-6 col-md-4 d-flex justify-content-around pt-3">
+                    <img src="images/perfil.jpg" alt="foto de Joaquin" style="width: 124px;
+                    height: 124px;
+                    flex-shrink: 1;
+                    border-radius: 124px;">
                 </div>                            
-                <div class="col-4 item">
+                <div class="col-sm-6 col-md-4 d-flex justify-content-around pt-3">
                     <ul>
                         <li>Joaquín Moreno</li>
                         <li>Filosofía (UBA)</li>
                         <li>UX Writer</li>
                     </ul>
                 </div>
-                <div class="col-6 item">
+                <div class="col-sm-12 col-md-4 d-flex justify-content-around pt-3">
                     <ul>
-                        <li><a href="mailto:jmoreno.arg@gmail.com" target="_blank">mail to</a>: jmoreno.arg@gmail.com</li>
-                        <li><a href="https://wa.me/5491167975530" target="_blank">(wa)</a>: (+54) 11-6797-5530</li>
-                        <li><a href="https://www.linkedin.com/in/joaqu%C3%ADn-moreno/" target="_blank">LinkedIn</a></li>
+                        <li><a href="mailto:jmoreno.arg@gmail.com" target="_blank" class="link-opacity-50-hover link-info">mail to</a>: jmoreno.arg@gmail.com</li>
+                        <li><a href="https://wa.me/5491167975530" target="_blank" class="link-opacity-50-hover link-info">(wa)</a>: (+54) 11-6797-5530</li>
+                        <li><a href="https://www.linkedin.com/in/joaqu%C3%ADn-moreno/" target="_blank" class="link-opacity-50-hover link-info">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
 
         </section>
 
-        <section class="agora">
+        <section class="container pb-5">
 
-            <h2>Ágora (experiencia)</h2>
+            <h2 class="border-bottom border-light">Ágora (experiencia)</h2>
 
-            <div class="agora1 row">
+            <div class="row mt-5">
 
-                <div class="col-6 trabajos">
+                <div class="col-sm-12 col-md-6">
                    <h4>Morelabs</h4>
                     <h5>2020 - presente</h5>
 
@@ -71,18 +80,18 @@
 
                 </div>
 
-                <div class="col-6">
-                    <img src="images/hercules.jpg" alt="escultura de Heracles">
+                <div class="col-sm-12 col-md-6">
+                    <img src="images/hercules.jpg" class="img-fluid" alt="escultura de Heracles">
                 </div>
             </div>
 
-            <div class="agora2 row">
-                <div class="col-6">
-                    <img src="images/escultura.JPG" alt="escultura de marmol">
+            <div class="row mt-5">
+                <div class="col-sm-12 col-md-6">
+                    <img src="images/escultura.JPG" class="img-fluid" alt="escultura de marmol">
                 </div>
 
-                <div class="col-6 voluntariado">
-                    <h3>Voluntariado</h3>
+                <div class="col-sm-12 col-md-6">
+                    <h3 class="pt-3">Voluntariado</h3>
                     <h4>Fundación Funrepar</h4>
                     <h5>2020 - 2022</h5>
 
@@ -103,11 +112,11 @@
 
         </section>
     
-        <section class="areopago">
-            <h2>Areópago (habilidades)</h2>
+        <section class="container pb-5">
+            <h2 class="border-bottom border-light">Areópago (habilidades)</h2>
 
-                <div class="habilidades row">
-                    <div class="col-4 item">
+                <div class="row  mt-5 align-items-center">
+                    <div class="col-sm-6 col-md-4 d-flex justify-content-around">
                         <ul>
                          <li>HTML, CSS</li>
                          <li>Figma, Miró</li>
@@ -116,7 +125,7 @@
                         </ul>
                     </div>
         
-                    <div class="col-4 item">
+                    <div class="col-sm-6 col-md-4 d-flex justify-content-around">
                         <ul>
                             <li>Creatividad</li>
                             <li>Storytelling</li>
@@ -125,7 +134,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-4 item">
+                    <div class="col-sm-12 col-md-4 d-flex justify-content-around">
                         <ul>
                             <li>Inglés: advanced</li>
                             <li>Italiano: avanzato</li>
@@ -136,13 +145,13 @@
                 </div>
             </section>
 
-        <section class="academia">
-            <h2>Academia (educación)</h2>
+        <section class="container pb-5">
+            <h2 class="border-bottom border-light">Academia (educación)</h2>
     
-            <div class="educacion row">
-                <p class="col-7 item">Mi curiosidad y ganas de saber sobre un poco de todo me llevaron a estudiar Filosofía en la Universidad de Buenos Aires. Cursé toda la carrera pero nunca con el objetivo de dedicarme a la investigación. Cuando cursé Filosofía del Lenguaje encontré un mundo que me apasionó: la pragmática lingüística. Hice esa especialización y elegí hacer materias de la carrera de Letras para complementar. Las teorías conversacionales me apasionaron, por eso, decidí dedicarme a la comunicación con su guía. Tiempo después, atraído por la innovación, tomé contacto con el mundo UX. Entendí que los ámbitos de trabajo dinámicos y colaborativos, donde se valoran la creatividad y la investigación, son un lugar donde mejor me puedo desenvolver.</p>
+            <div class="row gap-1  mt-5">
+                <p class="col-sm-12 col-md-12">Mi curiosidad y ganas de saber sobre un poco de todo me llevaron a estudiar Filosofía en la Universidad de Buenos Aires. Cursé toda la carrera pero nunca con el objetivo de dedicarme a la investigación. Cuando cursé Filosofía del Lenguaje encontré un mundo que me apasionó: la pragmática lingüística. Hice esa especialización y elegí hacer materias de la carrera de Letras para complementar. Las teorías conversacionales me apasionaron, por eso, decidí dedicarme a la comunicación con su guía. Tiempo después, atraído por la innovación, tomé contacto con el mundo UX. Entendí que los ámbitos de trabajo dinámicos y colaborativos, donde se valoran la creatividad y la investigación, son un lugar donde mejor me puedo desenvolver.</p>
 
-                <ul class="col-5 item">
+                <ul class="col-sm-12 col-md-5">
                     <li>JavaScript, Codecademy (presente)</li>
                     <li>UX Writing, Coderhouse (2023)</li>
                     <li>Diseño de Comunicaciones Digitales, UdeSA (2022)</li>
@@ -152,14 +161,17 @@
             </div>
         </section> 
         
-        <section class="oraculo">
-            <h2>Oráculo</h2>
+        <section class="container pb-5">
+            <h2 class="border-bottom border-light">Oráculo</h2>
             
-            <p class="col-12 pitonisa">Bienvenido, viajero audaz, al umbral del misterio y la sabiduría ancestral. La pitonisa, envuelta en los velos del destino, te recibe con ojos que vislumbran más allá de lo tangible. Sus labios susurran palabras de incertidumbre y revelación, mientras su voz se funde con el eco de los tiempos. Adéntrate en este sagrado espacio y permite que los secretos del universo te sean desvelados.</p>
-            <div class="oracle">
-                <input placeholder="¿Cuál es tu pregunta, valiente buscador de respuestas?"></input>
-                <button type="button" id="ask">consultar</button>
-                <div id="response"></div>
+            <p class="col-sm-12 col-md-12  mt-5">Bienvenido, viajero audaz, al umbral del misterio y la sabiduría ancestral. La pitonisa, envuelta en los velos del destino, te recibe con ojos que vislumbran más allá de lo tangible. Sus labios susurran palabras de incertidumbre y revelación, mientras su voz se funde con el eco de los tiempos. Adéntrate en este sagrado espacio y permite que los secretos del universo te sean desvelados.</p>
+            <div class="container pb-5 align-middle">
+                <div class="flex-column">
+                    <input placeholder="¿Cuál es tu pregunta, valiente buscador de respuestas?" class="col-sm-4 col-md-8"></input>
+                    <button type="button" class="btn btn-light" id="ask">consultar</button>
+                </div>
+                
+                <div id="response" class="mt-5"></div>
 
             </div>
             
@@ -170,7 +182,7 @@
         </section>
 
         <footer>
-            <img src="images/footer.jpg" alt="templo de Agrigento">
+            <img src="images/footer.jpg" class="img-fluid" alt="templo de Agrigento">
         </footer>
 
 
